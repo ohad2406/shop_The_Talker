@@ -1,0 +1,42 @@
+.all_the_header {
+  width: 100vw;
+  height: 145px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.all_the_header h1 {
+  font-size: 5rem;
+}
+@media (max-width: 765px) {
+  .all_the_header h1 {
+    font-size: 3rem;
+  }
+}
+
+.header_home {
+  align-items: center;
+
+  margin: 20px;
+  text-shadow: 0px 0px 0 #899cd5, 1px 1px 0 #8194cd, 2px 2px 0 #788bc4,
+    3px 3px 0 #6f82bb, 4px 4px 0 #677ab3, 5px 5px 0 #5e71aa, 6px 6px 0 #5568a1,
+    7px 7px 0 #4c5f98, 8px 8px 0 #445790, 9px 9px 0 #3b4e87, 10px 10px 0 #32457e,
+    11px 11px 0 #2a3d76, 12px 12px 0 #21346d, 13px 13px 0 #182b64,
+    14px 14px 0 #0f225b, 15px 15px 0 #071a53, 16px 16px 0 #02114a,
+    17px 17px 0 #0b0841, 18px 18px 0 #130039, 19px 19px 0 #1c0930,
+    20px 20px 0 #251227, 21px 21px 20px rgba(0, 0, 0, 1),
+    21px 21px 1px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.header_home h1 {
+  font-size: 70px;
+}
+@media (max-width: 390px) {
+  .header_home h1 {
+    font-size: 45px;
+  }
+}
