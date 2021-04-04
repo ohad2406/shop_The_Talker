@@ -17,6 +17,14 @@ class Search extends Component {
     searchValue(value.trim());
   };
 
+handleOnKeyUp = (event) => {
+    if (event.key === "Enter") {
+      const { value } = this.state;
+      const { searchValue } = this.props;
+      searchValue(value.trim());
+    }
+  };
+
   render() {
     const { value } = this.state;
     return (
@@ -26,7 +34,8 @@ class Search extends Component {
         dir="rtl"
       >
         <button onClick={this.handleSearch}>&#x2315;|</button>
-        <input type="search" value={value} onChange={this.handleChange} />
+        <input type="search" value={value} onChange={this.handleChange} onKeyPress={this.handleOnKeyUp}
+/>
       </div>
     );
   }
