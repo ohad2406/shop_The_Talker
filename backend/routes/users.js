@@ -75,10 +75,8 @@ router.put("/my-cart", authToken, async (req, res) => {
         { _id: req.userToken._id },
         { $pull: { carts: { $in: req.body.carts } } }
       );
-      await ProdModel.updateOne({ prodNumber: req.body.carts[0] });
       return res.json(data2);
     }
-    await ProdModel.updateOne({ prodNumber: req.body.carts[0] });
     res.json(data);
   } catch (err) {
     return res.status(400).json(err);
